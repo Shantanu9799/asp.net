@@ -1,0 +1,82 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-3.7.1.js"></script>
+</head>
+<body>
+    @*<div>
+        <h3>ID = </h3> <h2 id="stuID"></h2>
+        <h3>NAME = </h3> <h2 id="stuName"></h2>
+        <h3>EMAIL = </h3> <h2 id="stuEmail"></h2>
+    </div>
+    <div>
+        <input type="button" onclick="BtnClick()" value="Click me" />
+    </div>*@
+
+    <div>
+        <form>
+            <input type="text" id="stdId" placeholder="Student ID" />
+            <br /> <br />
+            <input type="text" id="stdName" placeholder="Student Name" />
+            <br /> <br />
+            <input type="text" id="stdEmail" placeholder="Student Email" />
+            <br /> <br />
+            <input type="button" value="send" onclick="ClickBtn()"/>
+        </form>
+    </div>
+
+</body>
+</html>
+
+<script>
+    function BtnClick() {
+        $.ajax({
+            url: "/Home/GetStudent",
+            method: "GET",
+            success: function (data) {
+                data = JSON.parse(data);
+                $("#stuID").text(data.Id);
+                $("#stuName").text(data.Name);
+                $("#stuEmail").text(data.Email);
+            },
+            error: function (err) {
+                console.error(err);
+            }
+        })
+    }
+
+    function ClickBtn() {
+        var id = $("stdId").val();
+        var name = $("stdName").val();
+        var email = $("stdEmail").val();
+        var obj = {
+            Id: id,
+            Name: name,
+            Email: email
+        }
+
+        SendData(obj);
+    }
+
+    function SendData(obj) {
+        $.ajax({
+            url: "/Home/AddStudent",
+            method: "POST",
+            data : obj,
+            success: function (data) {
+                alert(data);
+            },
+            error: function (err) {
+                console.error(err);
+            }
+        })
+    }
+</script>

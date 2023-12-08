@@ -1,0 +1,46 @@
+﻿@model RoutingTraditionalWay.Models.Address
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetStudentAddress</title>
+</head>
+<body>
+    <div>
+        <h4>Address</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.HomeNumber)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.HomeNumber)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.HomeAddress)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.HomeAddress)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.City)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.City)
+            </dd>
+    
+        </dl>
+    </div>
+</body>
+</html>

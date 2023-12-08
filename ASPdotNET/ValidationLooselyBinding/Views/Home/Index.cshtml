@@ -1,0 +1,66 @@
+﻿
+@model ValidationLooselyBinding.Models.Employee
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h2>Loosely Validation</h2>
+        @using (Html.BeginForm("SubmitData", "Home", FormMethod.Post))
+        {
+            @Html.TextBox("FirstName") <br />
+            @Html.ValidationMessage("FirstName")<br /> <br />
+            @Html.TextBox("LastName") <br />
+            @Html.ValidationMessage("LastName")<br /> <br />
+            @Html.TextBox("Email") <br />
+            @Html.ValidationMessage("Email")<br /> <br />
+            @Html.Editor("Age") <br />
+            @Html.ValidationMessage("Age")<br /> <br />
+            <input type="submit" value="SUBMIT" />
+        }
+    </div>
+
+    <hr />
+
+    <div>
+        <h2>Strongly Validation</h2>
+        @using (Html.BeginForm("SubmitData", "Home", FormMethod.Post))
+        {
+            @Html.TextBoxFor(x => x.FirstName) <br />
+            @Html.ValidationMessageFor(x => x.FirstName)<br /> <br />
+            @Html.TextBoxFor(x => x.FirstName) <br />
+            @Html.ValidationMessageFor(x => x.LastName)<br /> <br />
+            @Html.TextBoxFor(x => x.FirstName) <br />
+            @Html.ValidationMessageFor(x => x.Email)<br /> <br />
+            @Html.EditorFor(x => x.FirstName) <br />
+            @Html.ValidationMessageFor(x => x.Age)<br /> <br />
+            <input type="submit" value="SUBMIT" />
+        }
+    </div>
+
+    <hr />
+
+    <div>
+        <h2>Validation Summary</h2>
+        @using (Html.BeginForm("SubmitData", "Home", FormMethod.Post))
+        {
+            @Html.ValidationSummary() <br />
+
+            @Html.TextBoxFor(x => x.FirstName) <br /><br />
+
+            @Html.TextBoxFor(x => x.FirstName) <br /><br />
+
+            @Html.TextBoxFor(x => x.FirstName) <br /><br />
+
+            @Html.EditorFor(x => x.FirstName) <br /><br />
+
+            <input type="submit" value="SUBMIT" />
+        }
+    </div>
+</body>
+</html>

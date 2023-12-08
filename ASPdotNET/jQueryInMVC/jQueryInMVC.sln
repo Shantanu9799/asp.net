@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34301.259
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jQueryInMVC", "jQueryInMVC.csproj", "{E01470C7-5B3C-44D1-B3AE-7EDBBF5DE0BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E01470C7-5B3C-44D1-B3AE-7EDBBF5DE0BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E01470C7-5B3C-44D1-B3AE-7EDBBF5DE0BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E01470C7-5B3C-44D1-B3AE-7EDBBF5DE0BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E01470C7-5B3C-44D1-B3AE-7EDBBF5DE0BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27B1B312-B841-44BF-99D5-723A73DA6E67}
+	EndGlobalSection
+EndGlobal

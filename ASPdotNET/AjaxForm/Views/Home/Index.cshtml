@@ -1,0 +1,42 @@
+﻿@model AjaxForm.Models.Employee
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div id="loader" style="display: none" >
+    <img src="~/Content/Loading.gif" />
+</div>
+
+@using (Ajax.BeginForm("Index", new AjaxOptions() 
+{ OnSuccess = "fnSuccess", 
+    OnFailure = "fnFailure", 
+    HttpMethod = "POST",
+    LoadingElementId = "loader",
+    LoadingElementDuration = 2000
+}))
+
+{
+<div>
+    @Html.EditorFor(x => x.firstName) <br /><br />
+    @Html.EditorFor(x => x.lastName) <br /><br />
+    @Html.EditorFor(x => x.email) <br /><br />
+
+    <input type="submit" value= "Click"/>
+</div>
+}
+
+<script>
+
+    function fnSuccess(data) {
+        console.log(data);
+        alert("op");
+    }
+
+    function fnFailure(err) {
+        console.log(error);
+        alert("khatam");
+    }
+
+</script>

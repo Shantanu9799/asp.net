@@ -1,0 +1,66 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>Hello World</h1>
+    </div>
+    <hr />
+
+    @*Single Line Code*@
+    <div>
+        <h2>@DateTime.Now</h2>
+    </div>
+
+    <hr />
+    @*MultiLine Code*@
+    @{
+        var a_1 = 1;
+        var b = 2;
+        var c = a_1 + b;
+    }
+    <h3>@c</h3>
+
+    <hr />
+    @*Conditional Statement*@
+    @{
+        var a = 3;
+    }
+    @if (a == 1)
+    {
+        <h4>The <strong>if</strong> block executed</h4>
+    }
+    else if (a == 2)
+    {
+        <h4>The <strong>else - if</strong> block executed</h4>
+    }
+    else
+    {
+        <h4>The <strong>else</strong> block executed</h4>
+    }
+
+    <hr />
+    @*loop*@
+    @*for loop*@
+    @for (int i = 1; i <= 10; i++)
+    {
+        <h4>Itearation Number : @i</h4>
+    }
+
+    @*for-each loop*@
+    @{
+        var list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+    }
+    <hr />
+    @foreach (var obj in list)
+    {
+        <h4>List Element : @obj</h4>
+    }
+
+</body>
+</html>

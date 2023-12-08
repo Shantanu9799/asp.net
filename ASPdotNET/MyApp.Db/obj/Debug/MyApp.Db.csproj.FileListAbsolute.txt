@@ -1,0 +1,14 @@
+D:\Shantanu_Visual Studio\ASPdotNET\MyApp.Db\bin\Debug\MyApp.Db.dll.config
+D:\Shantanu_Visual Studio\ASPdotNET\MyApp.Db\bin\Debug\MyApp.Db.dll
+D:\Shantanu_Visual Studio\ASPdotNET\MyApp.Db\bin\Debug\MyApp.Db.pdb
+D:\Shantanu_Visual Studio\ASPdotNET\MyApp.Db\bin\Debug\EntityFramework.dll
+D:\Shantanu_Visual Studio\ASPdotNET\MyApp.Db\bin\Debug\EntityFramework.SqlServer.dll
+D:\Shantanu_Visual Studio\ASPdotNET\MyApp.Db\bin\Debug\MyApp.Models.dll
+D:\Shantanu_Visual Studio\ASPdotNET\MyApp.Db\bin\Debug\MyApp.Models.pdb
+D:\Shantanu_Visual Studio\ASPdotNET\MyApp.Db\bin\Debug\EntityFramework.xml
+D:\Shantanu_Visual Studio\ASPdotNET\MyApp.Db\bin\Debug\EntityFramework.SqlServer.xml
+D:\Shantanu_Visual Studio\ASPdotNET\MyApp.Db\obj\Debug\MyApp.Db.csproj.AssemblyReference.cache
+D:\Shantanu_Visual Studio\ASPdotNET\MyApp.Db\obj\Debug\MyApp.Db.csproj.CoreCompileInputs.cache
+D:\Shantanu_Visual Studio\ASPdotNET\MyApp.Db\obj\Debug\MyApp.Db.csproj.CopyComplete
+D:\Shantanu_Visual Studio\ASPdotNET\MyApp.Db\obj\Debug\MyApp.Db.dll
+D:\Shantanu_Visual Studio\ASPdotNET\MyApp.Db\obj\Debug\MyApp.Db.pdb

@@ -1,0 +1,7 @@
+D:\Shantanu_Visual Studio\ASPdotNET\Methods\bin\Debug\Methods.exe.config
+D:\Shantanu_Visual Studio\ASPdotNET\Methods\bin\Debug\Methods.exe
+D:\Shantanu_Visual Studio\ASPdotNET\Methods\bin\Debug\Methods.pdb
+D:\Shantanu_Visual Studio\ASPdotNET\Methods\obj\Debug\Methods.csproj.AssemblyReference.cache
+D:\Shantanu_Visual Studio\ASPdotNET\Methods\obj\Debug\Methods.csproj.CoreCompileInputs.cache
+D:\Shantanu_Visual Studio\ASPdotNET\Methods\obj\Debug\Methods.exe
+D:\Shantanu_Visual Studio\ASPdotNET\Methods\obj\Debug\Methods.pdb
